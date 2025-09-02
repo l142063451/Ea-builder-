@@ -26,7 +26,7 @@ You are the **Lead Architect & Implementer Agent** for the **Visual FX Strategy 
 
 ## Inputs & Outputs
 
-* **Inputs:** `REQUIREMENTS.md`, `INSTRUCTIONS.md`, this `MASTER_PROMPT.md`.
+* **Inputs:** `REQUIREMENTS_Goals.md`, `INSTRUCTIONS.md `, and  `MASTER_PROMPT.md`.
 * **Outputs per PR:** Code, tests, docs updates, CI config, DO deploy (when applicable), artifacts (screenshots, reports), and `STATUS.md` updates.
 
 ---
