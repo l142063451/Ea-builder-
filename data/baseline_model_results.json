@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-09-13T16:12:05.947958",
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.532,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "n_samples": 750,
+      "metadata": {
+        "n_test_samples": 750,
+        "feature_names": [
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "sma_20",
+          "ema_20",
+          "rsi_14",
+          "macd_line",
+          "bb_upper",
+          "bb_lower",
+          "atr_14",
+          "stoch_k",
+          "stoch_d",
+          "williams_r",
+          "cci_20"
+        ],
+        "model_type": "SimpleLogisticRegression"
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.5826666666666667,
+      "precision": 0.5848214285714286,
+      "recall": 0.3732193732193732,
+      "f1_score": 0.4556521739130435,
+      "n_samples": 750,
+      "metadata": {
+        "n_test_samples": 750,
+        "feature_names": [
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "sma_20",
+          "ema_20",
+          "rsi_14",
+          "macd_line",
+          "bb_upper",
+          "bb_lower",
+          "atr_14",
+          "stoch_k",
+          "stoch_d",
+          "williams_r",
+          "cci_20"
+        ],
+        "model_type": "SimpleRandomForest"
+      }
+    }
+  }
+}

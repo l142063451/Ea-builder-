@@ -1,0 +1,40 @@
+{
+  "generation_timestamp": "2025-09-13T16:11:43.576995",
+  "total_records": 10000,
+  "pairs_generated": 4,
+  "database_path": "data/trading_bot.db",
+  "results": {
+    "EURUSD=X": {
+      "status": "success",
+      "records_generated": 2500,
+      "records_stored": 2500,
+      "base_price": 1.1,
+      "start_date": "2024-01-01 00:00:00",
+      "end_date": "2024-01-02 17:39:00"
+    },
+    "GBPUSD=X": {
+      "status": "success",
+      "records_generated": 2500,
+      "records_stored": 2500,
+      "base_price": 1.27,
+      "start_date": "2024-01-01 00:00:00",
+      "end_date": "2024-01-02 17:39:00"
+    },
+    "USDJPY=X": {
+      "status": "success",
+      "records_generated": 2500,
+      "records_stored": 2500,
+      "base_price": 148.5,
+      "start_date": "2024-01-01 00:00:00",
+      "end_date": "2024-01-02 17:39:00"
+    },
+    "AUDUSD=X": {
+      "status": "success",
+      "records_generated": 2500,
+      "records_stored": 2500,
+      "base_price": 0.67,
+      "start_date": "2024-01-01 00:00:00",
+      "end_date": "2024-01-02 17:39:00"
+    }
+  }
+}

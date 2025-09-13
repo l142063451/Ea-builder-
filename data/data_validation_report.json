@@ -1,0 +1,88 @@
+{
+  "report_timestamp": "2025-09-13T10:25:55.457940+00:00",
+  "data_collection_summary": {
+    "database_size_mb": 467.8359375,
+    "total_records": 1615116,
+    "total_currencies": 4,
+    "validation_status": "FAIL"
+  },
+  "quality_assessment": {
+    "average_quality_score": 99.99,
+    "data_completeness": 75.0,
+    "overall_assessment": "NEEDS_IMPROVEMENT",
+    "ready_for_next_stage": false
+  },
+  "currency_details": {
+    "EURUSD=X": {
+      "record_count": 751058,
+      "date_range": {
+        "start": "2023-09-14 10:22:05.187966",
+        "end": "2025-09-12 23:59:05.187966"
+      },
+      "price_range": {
+        "min": 1.099133195648591,
+        "max": 1.1015982469927879,
+        "avg": 1.1001385395663363
+      },
+      "quality_score": 99.99,
+      "data_quality_metrics": {
+        "ohlc_consistency": 100.0,
+        "time_continuity": 99.99,
+        "price_realism": 100.0
+      },
+      "issues": [],
+      "status": "PASS"
+    },
+    "GBPUSD=X": {
+      "record_count": 751058,
+      "date_range": {
+        "start": "2023-09-14 10:22:05.187966",
+        "end": "2025-09-12 23:59:05.187966"
+      },
+      "price_range": {
+        "min": 1.2778610379729702,
+        "max": 1.2831967431430542,
+        "avg": 1.2802062301262815
+      },
+      "quality_score": 99.99,
+      "data_quality_metrics": {
+        "ohlc_consistency": 100.0,
+        "time_continuity": 99.99,
+        "price_realism": 100.0
+      },
+      "issues": [],
+      "status": "PASS"
+    },
+    "USDJPY=X": {
+      "record_count": 113000,
+      "date_range": {
+        "start": "2023-09-14 10:22:05.187966",
+        "end": "2024-01-02 21:41:05.187966"
+      },
+      "price_range": {
+        "min": 107.831255672393,
+        "max": 111.45237791507452,
+        "avg": 109.25695265488437
+      },
+      "quality_score": 99.99,
+      "data_quality_metrics": {
+        "ohlc_consistency": 100.0,
+        "time_continuity": 99.99,
+        "price_realism": 100.0
+      },
+      "issues": [],
+      "status": "PASS"
+    },
+    "AUDUSD=X": {
+      "record_count": 0,
+      "quality_score": 0,
+      "issues": [
+        "No data found"
+      ]
+    }
+  },
+  "recommendations": [
+    "Complete data collection for all currency pairs",
+    "\u274c Data quality insufficient - Continue improving data collection"
+  ]
+}
