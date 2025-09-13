@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "collection_timestamp": "2025-09-13T10:21:37.394034+00:00",
-    "collection_method": "live_with_fallback",
+    "collection_timestamp": "2025-09-13T10:28:28.063973+00:00",
+    "collection_method": "simulation",
     "total_pairs": 4,
-    "successful_pairs": 0,
-    "total_records_stored": 0,
+    "successful_pairs": 4,
+    "total_records_stored": 3004232,
     "configuration": {
       "historical_years": 2,
       "currency_pairs": [
@@ -18,20 +18,72 @@
   },
   "results": {
     "EURUSD=X": {
-      "status": "error",
-      "error": "'NoneType' object has no attribute 'generate_historical_data'"
+      "status": "success",
+      "data_type": "simulated",
+      "records_generated": 751058,
+      "records_stored": 751058,
+      "quality_metrics": {
+        "quality_score": 100.0,
+        "completeness": 100.0,
+        "gap_rate": 0.0,
+        "ohlc_consistency": 100.0,
+        "total_records": 751058,
+        "data_type": "simulated"
+      },
+      "start_date": "2023-09-14T10:22:05.187966+00:00",
+      "end_date": "2025-09-12T23:59:05.187966+00:00",
+      "csv_file": "data/simulated/EURUSD_X_1m_simulation.csv"
     },
     "GBPUSD=X": {
-      "status": "error",
-      "error": "'NoneType' object has no attribute 'generate_historical_data'"
+      "status": "success",
+      "data_type": "simulated",
+      "records_generated": 751058,
+      "records_stored": 751058,
+      "quality_metrics": {
+        "quality_score": 100.0,
+        "completeness": 100.0,
+        "gap_rate": 0.0,
+        "ohlc_consistency": 100.0,
+        "total_records": 751058,
+        "data_type": "simulated"
+      },
+      "start_date": "2023-09-14T10:22:05.187966+00:00",
+      "end_date": "2025-09-12T23:59:05.187966+00:00",
+      "csv_file": "data/simulated/GBPUSD_X_1m_simulation.csv"
     },
     "USDJPY=X": {
-      "status": "error",
-      "error": "'NoneType' object has no attribute 'generate_historical_data'"
+      "status": "success",
+      "data_type": "simulated",
+      "records_generated": 751058,
+      "records_stored": 751058,
+      "quality_metrics": {
+        "quality_score": 100.0,
+        "completeness": 100.0,
+        "gap_rate": 0.0,
+        "ohlc_consistency": 100.0,
+        "total_records": 751058,
+        "data_type": "simulated"
+      },
+      "start_date": "2023-09-14T10:22:05.187966+00:00",
+      "end_date": "2025-09-12T23:59:05.187966+00:00",
+      "csv_file": "data/simulated/USDJPY_X_1m_simulation.csv"
     },
     "AUDUSD=X": {
-      "status": "error",
-      "error": "'NoneType' object has no attribute 'generate_historical_data'"
+      "status": "success",
+      "data_type": "simulated",
+      "records_generated": 751058,
+      "records_stored": 751058,
+      "quality_metrics": {
+        "quality_score": 100.0,
+        "completeness": 100.0,
+        "gap_rate": 0.0,
+        "ohlc_consistency": 100.0,
+        "total_records": 751058,
+        "data_type": "simulated"
+      },
+      "start_date": "2023-09-14T10:22:05.187966+00:00",
+      "end_date": "2025-09-12T23:59:05.187966+00:00",
+      "csv_file": "data/simulated/AUDUSD_X_1m_simulation.csv"
     }
   }
 }
