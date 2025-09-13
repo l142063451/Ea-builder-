@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-09-13T21:01:29.229809",
+  "stage": "Stage 3.2 - Advanced Neural Networks (Efficient Demo)",
+  "target_accuracy": 0.75,
+  "sequence_length": 30,
+  "models": {
+    "Fast_LSTM": {
+      "accuracy": 0.4708249496981891,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "directional_accuracy": 0.4708249496981891,
+      "profitable_trade_rate": 0.0,
+      "meets_target": false,
+      "training_epochs": 30,
+      "metadata": {
+        "hidden_units": 32,
+        "sequence_length": 30,
+        "model_type": "LSTM"
+      }
+    },
+    "Fast_GRU": {
+      "accuracy": 0.4708249496981891,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "directional_accuracy": 0.4708249496981891,
+      "profitable_trade_rate": 0.0,
+      "meets_target": false,
+      "training_epochs": 25,
+      "metadata": {
+        "hidden_units": 40,
+        "sequence_length": 30,
+        "model_type": "GRU"
+      }
+    }
+  }
+}
