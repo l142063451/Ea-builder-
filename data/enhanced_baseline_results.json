@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-09-13T16:15:22.243337",
+  "stage": "Stage 3 - Enhanced Baseline Models",
+  "target_criteria": {
+    "accuracy": 0.6,
+    "precision": 0.55,
+    "directional_accuracy": 0.6
+  },
+  "models": {
+    "enhanced_logistic_regression": {
+      "accuracy": 0.890520694259012,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "directional_accuracy": 0.890520694259012,
+      "profitable_trade_rate": 0.9002932551319648,
+      "meets_baseline_criteria": true,
+      "n_samples": 749,
+      "metadata": {
+        "n_test_samples": 749,
+        "feature_names": [
+          "open",
+          "high",
+          "low",
+          "close",
+          "log_volume",
+          "price_change",
+          "hl_spread",
+          "oc_change",
+          "sma_20",
+          "ema_20"
+        ],
+        "model_type": "EnhancedLogisticRegression",
+        "class_distribution": "77/672"
+      }
+    },
+    "enhanced_random_forest": {
+      "accuracy": 0.897196261682243,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "directional_accuracy": 0.897196261682243,
+      "profitable_trade_rate": 0.8969210174029452,
+      "meets_baseline_criteria": true,
+      "n_samples": 749,
+      "metadata": {
+        "n_test_samples": 749,
+        "feature_names": [
+          "open",
+          "high",
+          "low",
+          "close",
+          "log_volume",
+          "price_change",
+          "hl_spread",
+          "oc_change",
+          "sma_20",
+          "ema_20"
+        ],
+        "model_type": "EnhancedRandomForest",
+        "class_distribution": "77/672"
+      }
+    }
+  }
+}
