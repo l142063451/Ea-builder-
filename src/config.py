@@ -25,8 +25,14 @@ class DatabaseConfig(BaseSettings):
     def assemble_db_url(cls, v: Optional[str], info) -> str:
         if isinstance(v, str) and v:
             return v
+        # Default to SQLite if no specific PostgreSQL config is provided
         values = info.data if hasattr(info, 'data') else {}
-        return f"postgresql://{values.get('user', 'trading_user')}:{values.get('password', '')}@{values.get('host', 'localhost')}:{values.get('port', 5432)}/{values.get('name', 'forex_trading_bot')}"
+        # Check if we have minimal PostgreSQL configuration
+        if values.get('password') or values.get('host') != 'localhost':
+            return f"postgresql://{values.get('user', 'trading_user')}:{values.get('password', '')}@{values.get('host', 'localhost')}:{values.get('port', 5432)}/{values.get('name', 'forex_trading_bot')}"
+        else:
+            # Use SQLite by default for development/testing
+            return "sqlite:///data/forex_trading.db"
 
 class TradingConfig(BaseSettings):
     """Trading configuration settings."""
