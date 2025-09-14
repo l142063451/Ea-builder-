@@ -1,0 +1,33 @@
+[package]
+name = "vgpu_shim"
+version = "0.1.0"
+edition = "2021"
+description = "vGPU user-space shim for CUDA/OpenCL/Vulkan compatibility"
+license = "MIT"
+
+[dependencies]
+idvbit_core = { path = "../idvbit_core" }
+god_index = { path = "../god_index" }
+tensor_net = { path = "../tensor_net" }
+
+# System interfaces
+libc = { workspace = true }
+libloading = { workspace = true }
+
+# Concurrency
+crossbeam = { workspace = true }
+dashmap = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+rmp-serde = { workspace = true }
+
+# Error handling
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+
+# Logging
+log = { workspace = true }
+
+[dev-dependencies]
+criterion = { workspace = true }

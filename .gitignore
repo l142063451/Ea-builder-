@@ -1,0 +1,81 @@
+# ISVGPU .gitignore
+
+# Rust
+rust/target/
+**/*.rs.bk
+rust/Cargo.lock
+
+# Python
+python/.venv/
+python/**/__pycache__/
+python/**/*.pyc
+python/**/*.pyo
+python/**/*.pyd
+python/.pytest_cache/
+python/dist/
+python/build/
+python/**/*.egg-info/
+python/.coverage
+python/htmlcov/
+
+# Jupyter Notebooks
+python/notebooks/**/*.html
+python/notebooks/**/.ipynb_checkpoints/
+
+# Documentation builds
+docs/_build/
+rust/target/doc/
+python/docs/_build/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.log
+
+# Build artifacts
+artifacts/
+build/
+dist/
+
+# Test artifacts
+coverage/
+test-results/
+*.coverage
+
+# Data files (large datasets)
+data/
+datasets/
+benchmarks/results/
+
+# Compiled libraries and binaries
+*.so
+*.dll
+*.dylib
+*.exe
+
+# Backup and temporary files
+*.bak
+*.backup
+*.orig
+
+# Research artifacts (may be large)
+experiments/
+research_data/
+precomputed/
+
+# System-specific
+.env
+.env.local
