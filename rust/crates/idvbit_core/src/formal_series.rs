@@ -9,10 +9,10 @@ use num_traits::{Zero, One};
 use crate::{Result, IDVBitError};
 
 // Custom serialization for Complex64
-#[derive(Debug, Clone, Serialize, Deserialize)]
-struct SerializableComplex {
-    re: f64,
-    im: f64,
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
+pub struct SerializableComplex {
+    pub re: f64,
+    pub im: f64,
 }
 
 impl From<Complex64> for SerializableComplex {
@@ -112,12 +112,17 @@ impl FormalPowerSeries {
     }
     
     /// Create series from rational generating function
-    pub fn from_rational(rational: RationalGeneratingFunction) -> Self {
+    pub fn from_rational(rational: &RationalGeneratingFunction) -> Self {
         Self {
             coefficients: Vec::new(),
-            rational_form: Some(rational),
+            rational_form: Some(rational.clone()),
             max_computed: 0,
         }
+    }
+    
+    /// Create constant series c + 0x + 0x² + ...
+    pub fn constant(c: Complex64) -> Self {
+        Self::new(vec![c])
     }
     
     /// Get coefficient a_n with lazy computation if needed

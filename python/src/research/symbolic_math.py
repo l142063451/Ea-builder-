@@ -50,6 +50,12 @@ class FormalPowerSeries:
         complex_coeffs = [complex(c) for c in coeffs]
         return cls(coefficients=complex_coeffs)
     
+    @classmethod
+    def from_rational_function(cls, rational: 'RationalGeneratingFunction') -> 'FormalPowerSeries':
+        """Create series from rational generating function."""
+        # Create from the rational function's SymPy representation
+        return cls(expression=rational.expression)
+    
     def coefficient(self, n: int) -> complex:
         """
         Extract coefficient [x^n] from the series.
