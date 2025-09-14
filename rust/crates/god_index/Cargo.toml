@@ -11,6 +11,7 @@ idvbit_core = { path = "../idvbit_core" }
 # Mathematical computation
 rug = { workspace = true }
 num-traits = { workspace = true }
+num-complex = { workspace = true }
 
 # Data structures
 dashmap = { workspace = true }
