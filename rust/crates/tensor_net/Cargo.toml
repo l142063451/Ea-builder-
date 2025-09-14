@@ -1,0 +1,30 @@
+[package]
+name = "tensor_net"
+version = "0.1.0"
+edition = "2021"
+description = "Tensor network implementations for high-dimensional compression"
+license = "MIT"
+
+[dependencies]
+idvbit_core = { path = "../idvbit_core" }
+
+# Linear algebra and tensors
+nalgebra = { workspace = true }
+ndarray = { workspace = true }
+
+# Parallel computation
+rayon = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+
+# Error handling
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+
+# Logging
+log = { workspace = true }
+
+[dev-dependencies]
+criterion = { workspace = true }
+proptest = { workspace = true }

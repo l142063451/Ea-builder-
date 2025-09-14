@@ -1,0 +1,30 @@
+[package]
+name = "god_index"
+version = "0.1.0"
+edition = "2021"
+description = "God-Index mapping from problems to solution indices"
+license = "MIT"
+
+[dependencies]
+idvbit_core = { path = "../idvbit_core" }
+
+# Mathematical computation
+rug = { workspace = true }
+num-traits = { workspace = true }
+
+# Data structures
+dashmap = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+
+# Error handling
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+
+# Logging
+log = { workspace = true }
+
+[dev-dependencies]
+criterion = { workspace = true }
+proptest = { workspace = true }

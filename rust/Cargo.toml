@@ -1,0 +1,50 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/idvbit_core",
+    "crates/god_index", 
+    "crates/tensor_net",
+    "crates/vgpu_shim",
+]
+
+[workspace.dependencies]
+# Mathematical and symbolic computation
+rug = "1.20"
+nalgebra = "0.32"
+ndarray = "0.15"
+num-complex = "0.4"
+num-traits = "0.2"
+
+# Serialization and data structures
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+rmp-serde = "1.1"
+
+# Performance and concurrency
+rayon = "1.7"
+crossbeam = "0.8"
+dashmap = "5.5"
+
+# Error handling and utilities
+anyhow = "1.0"
+thiserror = "1.0"
+log = "0.4"
+env_logger = "0.10"
+
+# Testing and benchmarking
+criterion = "0.5"
+proptest = "1.2"
+
+# FFI and system interfaces (for vGPU shim)
+libc = "0.2"
+libloading = "0.8"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.bench]
+inherits = "release"
+debug = true
