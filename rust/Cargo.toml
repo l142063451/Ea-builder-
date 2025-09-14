@@ -34,6 +34,7 @@ env_logger = "0.10"
 # Testing and benchmarking
 criterion = "0.5"
 proptest = "1.2"
+approx = "0.5"
 
 # FFI and system interfaces (for vGPU shim)
 libc = "0.2"

@@ -26,3 +26,4 @@ log = { workspace = true }
 criterion = { workspace = true }
 proptest = { workspace = true }
 env_logger = { workspace = true }
+approx = { workspace = true }
